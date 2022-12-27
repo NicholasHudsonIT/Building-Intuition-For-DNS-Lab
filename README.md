@@ -41,7 +41,7 @@ Now we will change the record address of "mainframe" to 8.8.8.8, if we go back t
 <img src="https://i.imgur.com/80ARdZu.png"/>
 </p>
 <p>
-Lastly, we will configure a CNAME record that points the host "search" to "www.google.com" If we ping "search" ping will not be able to find the host. we have to go back into the DNS tool on DC-1 and create the CNAME record "search". Once we create the CNAME record is created and we ping "search" it will resolve to www.google.com.
+Lastly, we will configure a CNAME record that points the host search to "www.google.com" If we ping "search," ping will not be able to find the host. we have to go back into the DNS tool on DC-1 and create the CNAME record "search". Once we create the CNAME record is created and we ping "search" it will now resolve to www.google.com.
 </p>
 <br />
 <p>
