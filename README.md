@@ -7,7 +7,7 @@ In this lab tutorial we will be experimenting with DNS to help us have a better 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- VirtualBox (Virtual Machines/Compute)
 - Remote Desktop
 - DNS
 
