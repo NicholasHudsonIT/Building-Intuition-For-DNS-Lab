@@ -24,7 +24,7 @@ In this lab tutorial we will be experimenting with DNS to help us have a better 
 <p>
 </p>
 <p>
-First we will be inspecting DNS A records on the server, <i>A records</i> are "domain name to IP address" maps. We are going to create an A record on our Domain Controller DC-1 for "mainframe" and have it point to DC-1's private IP address (If we try to ping mainframe without setting the DNS record it will not work). When we ping "mainframe" Client-1 is checking the DNS cache, checking its local host file and checking the DNS server. To create an A-record go to the Server Manager > Tools > DNS > DC-1 > Forward Lookup Zones > mydomain.com > right click and create a new A record, title it "mainframe". An A record maps a domain name to the IP address. If we go back to the Client Machine and ping "mainframe" we will get a reply. 
+First we will be inspecting DNS A records on the server, <i>A records</i> are "domain name to IP address" maps. We are going to create an A record on our Domain Controller DC-1 for "mainframe" and have it point to DC-1's private IP address (If we try to ping mainframe without setting the DNS record it will not work). When we ping "mainframe" Client-1 is checking the DNS cache, checking its local host file, and checking the DNS server. To create an A-record go to the Server Manager > Tools > DNS > DC-1 > Forward Lookup Zones > mydomain.com > right click and create a new A record, title it "mainframe". An A record maps a domain name to the IP address. If we go back to the Client Machine and ping "mainframe" we will get a reply. 
 </p>
 <br />
 
@@ -41,7 +41,7 @@ Now we will change the record address of "mainframe" to 8.8.8.8, if we go back t
 <img src="https://i.imgur.com/80ARdZu.png"/>
 </p>
 <p>
-Lastly, we will configure a CNAME record that points the host search to "www.google.com" If we ping "search," ping will not be able to find the host. we have to go back into the DNS tool on DC-1 and create the CNAME record "search". Once we create the CNAME record is created and we ping "search" it will now resolve to www.google.com.
+Lastly, we will configure a CNAME record that points the host search to "www.google.com". If we ping "search" without creating the record, the ping will not be able to find the host. We have to go back into the DNS tool on DC-1 and create the CNAME record "search". Once the CNAME record is created and we ping "search" it will now resolve to www.google.com.
 </p>
 <br />
 <p>
