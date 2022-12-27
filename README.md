@@ -3,7 +3,7 @@
 </p>
 
 <h1>Building Intuition for DNS Lab</h1>
-In this lab tutorial we will be experimenting with DNS to help us have a better understanding of DNS.<br />
+In this lab tutorial we will be experimenting with DNS to help us have a better understanding of it's functions.<br />
 
 <h2>Environments and Technologies Used</h2>
 
